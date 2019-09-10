@@ -1,3 +1,3 @@
 # BRAFE-COOFE
 
-Projeto site de uma cafeiteria.
+Projeto site de uma cafeiteria; Página inicial.
