@@ -65,7 +65,7 @@ a.menu-logo {
 /* Intodução */
 
 .intro {
-  background: url(img/bg-intro.jpg) no-repeat center center;
+  background: url(../img/bg-intro.jpg) no-repeat center center;
   background-size: cover;
   padding: 150px 0;
   text-align: center;
@@ -169,24 +169,24 @@ display: table;
 clear: both;
 }
 
-.produto-item {
+.produtos-item {
   width: 300px;
   float: left;
   margin: 0 10px 20px 10px;
 }
 
-.produto-item p {
+.produtos-item p {
   font-size: 0.875em;
   line-height: 1.4em;
 }
 
-.produto-item h2 {
+.produtos-item h2 {
   text-align: center;
   font-size: 2.25em;
   margin-bottom: 20px; 
 }
 
-.produto-item h2::before {
+.produtos-item h2::before {
   content: '';
   display: block;
   width: 100px;
@@ -210,7 +210,7 @@ h2.produtos-mineiro::before {
   color: #d7a54d;
 }
 
-.produto-btn {
+.produtos-btn {
   width: 180px;
   border: 3px solid;
   color: #252525;
