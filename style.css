@@ -227,150 +227,160 @@ h2.produtos-mineiro::before {
 /* Locais */
 
 .locais {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 20px 0;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
+/* Quando os elementos flutuam eles sempre procuram ocupar um espaço na tela
+ * Logo para que as imagens ficassem na parte de baixo foi necessário usar o 
+ * clear both
+ * 2 ou mais itens flutuando no mesmo container, ele não consegue pegar o height
+ * solução usar o cleafix
+ * poderia usar o overflow hidden que faz com que qualquer elemento que saia do contener 
+ * não apareça, por padrão os elementos são mostrados (se sair do valor especificado o overflow
+ * hidden faz com que ele suma) cuidado ao usar ele.
+*/
 .locais-item {
-	clear: both;
-	margin: 60px auto;
+ clear: both;
+ margin: 50px 0;
 }
 
-.locais-item::after, .locais-item::before {
-	display: table;
-	content: '';
-	clear: both;
+.locais-item::before, .locais-item::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
+/* retirar algusn pixesl que a imagem tem logo a necessidade do display block */
 .locais-item img {
-	width: 460px;
-	display: block;
-	float: left;
-	margin: 0 10px;
+  width: 460px;
+  float: left;
+  display: block;
+  margin: 0 10px;
 }
-
+/* div por padrão é display block */
 .locais-item > div {
-	width: 460px;
-	float: left;
-	margin: 0 10px;
+  width: 460px;
+  float: left;
+  margin: 0 10px;
 }
 
 .locais-item h2 {
-	font-size: 2.25em;
-	margin-bottom: 20px;
+  font-size: 2.25em;
+  margin-bottom: 20px;
 }
 
 .locais-item p {
-	font-size: 1.125em;
-	line-height: 1.4em;
-	max-width: 320px;
-	margin-bottom: 40px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 40px;
 }
 
 .locais-item a {
-	font-size: 1.125em;
-	text-transform: uppercase;
-	text-decoration: none;
-	border: 3px solid;
-	color: #252525;
-	padding: 10px 20px;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid;
+  color: #252525;
+  padding: 10px 20px;
 }
 
 /* Assine */
 
 .assine {
-	background: #e7e4d8;
-	padding: 30px 0;
+  background: #e7e4d8;
+  padding: 30px 0;
 }
 
 .assine-container {
-	max-width: 960px;
-	margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
-
 .assine-container::after, .assine-container::before {
-	content: '';
-	display: table;
-	clear: both;
+ content: '' ;
+ display: table;
+ clear: both;
 }
 
 .assine-info {
-	width: 460px;
-	margin: 0 10px;
-	float: left;
+  width: 460px;
+  margin: 0 10px;
+  float: left;
 }
 
 .assine-info h2 {
-	font-size: 2.25em;
+  font-size: 2.25em;
 }
 
 .assine-info p {
-	font-size: 1.5em;
-	font-style: italic;
+  font-size: 1.5em;
+  font-style: italic;
 }
 
 .assine form {
-	width: 460px;
-	margin: 10px 10px 0 10px;
-	float: left;
+  width: 460px;
+  margin: 0 10px;
+  float: left;
 }
 
 .assine form label {
-	display: none;
+  display: none;
 }
 
 .assine input {
-	width: 320px;
-	border: 3px solid #252525;
-	background: none;
-	font-size: 1.5em;
-	font-style: italic;
-	font-family: Georgia, serif;
-	padding: 10px;
-	float: left;
+  box-sizing: border-box;
+  width: 320px;
+
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  font-size: italic;
+  font-family: Georgia, serif;
+  padding: 8px;
+  float: left;
 }
 
 .assine button {
-	background: #252525;
-	border: none;
-	font-family: Georgia, serif;
-	text-transform: uppercase;
-	font-size: 1.5em;
-	width: 140px;
-	padding: 13px 0;
-	color: #fff;
-	cursor: pointer;
+  background: #252525;
+  border: none;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  width: 140px;
+  padding: 11px 0;
+  color: #fff;
+  cursor: pointer;
 }
 
-/*Footer*/
+/* footer */
 
 .footer {
-	background: #d6d3c8;
-	padding: 40px 0;
+  background: #d6d3c8;
+  padding: 40px 0;
 }
 
 .footer-container {
-	max-width: 960px;
-	margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.footer-container::after, .footer-container::before {
-	content: '';
-	display: table;
-	clear: both;
+.footer-container::before, .footer-container::after{
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .footer p {
-	float: left;
-	margin: 0 10px;
-	font-size: 1.125em;
-	line-height: 1.4em;
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
 }
 
 .footer img {
-	float: right;
-	margin: 0 10px;
-	display: block;
+  float: right;
+  margin: 0 10px;
+  display: block;
 }
-
